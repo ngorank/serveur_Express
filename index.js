@@ -8,6 +8,8 @@ app.get("/",(req, res)=>{
     res.send('Hello World !!! ')
 } )
 
+const users = require("./routes/users")
+app.use("/users", users)
 
     console.log("Serveur est en ligne");
 } )
